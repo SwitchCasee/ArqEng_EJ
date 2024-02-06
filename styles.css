@@ -288,3 +288,86 @@ footer p{
 }
 
 /* Fim da sessão rodapé*/
+
+
+
+/* Solucoes */
+
+.solucoes{
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    margin: 100px auto 0;
+   }
+   
+   .solucoes h2{
+       font-size: 3rem;
+       font-weight: 700;
+       font-family: var(--font-titulo);
+       margin-bottom: 20px;
+       color: var(--color-orange);
+   }
+   
+   .solucoes .describe{
+       display: flex;
+       flex-direction: column;
+       width: 160%;
+       font-size: 2rem;
+       line-height: 56px;
+       margin:0px 30px 0px 80px;
+       font-family: var(--font-texto);
+   }
+   
+   .solucoes button{
+    width: 30vh;
+    border-radius: 10px;
+    background-color: var(--color-dark-red);
+    font-family: var(--font-texto);
+    color: var(--color-white);
+    border: solid 1px var(--color-white);
+    font-size: 25px;
+    font-weight: 600;
+    text-align:center;
+    cursor: pointer;
+   }
+
+   /* secoes_desc */
+.PPCI {
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    margin: 100px auto 0;
+   }
+
+   .PPCI h2{ 
+    font-size: 3rem;
+    font-family: var(--font-titulo);
+    margin-bottom: 20px;
+    color: var(--color-orange);
+    font-style: italic;
+    font-weight: bolder;
+    }
+
+    .PPCI h3{
+    font-size:30px;
+    font-family: var(--font-texto);
+    /* padding-left: 5%; */
+    /* padding: 30%; */
+    color: var(--color-orange);
+    justify-content: space-between;
+    }
+
+.Arquitetônico {
+        display: flex;
+        align-items:flex-start;
+        justify-content: space-between;
+        margin: 100px auto 0;
+       }
+       .Arquitetônico h2{ 
+        font-size: 3rem;
+        font-family: var(--font-titulo);
+        margin-bottom: 20px;
+        color: var(--color-orange);
+        font-style: italic;
+        font-weight: bolder;
+        }
