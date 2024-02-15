@@ -1,0 +1,392 @@
+/* Solucoes */
+
+.solucoes {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 100px auto 0;
+}
+.solucoes-text h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: var(--font-titulo);
+  margin-bottom: 20px;
+  color: var(--color-orange);
+}
+.solucoes-text h2 span {
+  color: var(--color-dark-gray);
+}
+
+.solucoes-text .describe {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  font-size: 2rem;
+  line-height: 56px;
+  margin: 140px 0px 0px 165px;
+  font-family: var(--font-texto);
+  padding: 20px;
+  border-radius: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+/* secoes_desc */
+.PPCI {
+  justify-content: space-between;
+  margin: 100px auto 0;
+}
+
+.PPCI h2 {
+  font-size: 3rem;
+  font-family: var(--font-titulo);
+  margin-bottom: 20px;
+  color: var(--color-orange);
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.PPCI h3 {
+  font-size: 30px;
+  font-family: var(--font-texto);
+  /* padding-left: 5%; */
+  /* padding: 30%; */
+  justify-content: space-between;
+}
+
+.Arquitetônico {
+  justify-content: space-between;
+  margin: 100px auto 0;
+}
+.Arquitetônico h2 {
+  font-size: 3rem;
+  font-family: var(--font-titulo);
+  margin-bottom: 20px;
+  color: var(--color-orange);
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.Arquitetônico h3 {
+  font-size: 30px;
+  font-family: var(--font-texto);
+  /* padding-left: 5%; */
+  /* padding: 30%; */
+  justify-content: space-between;
+}
+
+.Design_Interiores {
+  justify-content: space-between;
+  margin: 100px auto 0;
+}
+.Design_Interiores h2 {
+  font-size: 3rem;
+  font-family: var(--font-titulo);
+  margin-bottom: 20px;
+  color: var(--color-orange);
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.Design_Interiores h3 {
+  font-size: 30px;
+  font-family: var(--font-texto);
+  justify-content: space-between;
+}
+
+.Paisagismo {
+  justify-content: space-between;
+  margin: 100px auto 0;
+}
+.Paisagismo h2 {
+  font-size: 3rem;
+  font-family: var(--font-titulo);
+  margin-bottom: 20px;
+  color: var(--color-orange);
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.Paisagismo h3 {
+  font-size: 30px;
+  font-family: var(--font-texto);
+  /* padding-left: 5%; */
+  /* padding: 30%; */
+  justify-content: space-between;
+}
+.Hidrossanitario {
+  justify-content: space-between;
+  margin: 100px auto 0;
+}
+.Hidrossanitario h2 {
+  font-size: 3rem;
+  font-family: var(--font-titulo);
+  margin-bottom: 20px;
+  color: var(--color-orange);
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.Hidrossanitario h3 {
+  font-size: 30px;
+  font-family: var(--font-texto);
+  /* padding-left: 5%; */
+  /* padding: 30%; */
+  justify-content: space-between;
+}
+/*Sessão de cards*/
+
+.card {
+  width: 18vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 14px;
+  gap: 20px;
+  height: 38em;
+  box-shadow: gray 0 5px 4px 2px;
+  background-color: var(--color-white);
+}
+.solucoes {
+  flex-wrap: wrap;
+  gap: 8em;
+}
+.card img {
+  width: 18vw;
+  border-radius: 14px 14px 0 0;
+}
+.card h3 {
+  font-family: var(--font-texto);
+  color: var(--color-orange);
+  font-size: 1.3rem;
+}
+
+.card .card-text {
+  text-align: center;
+  font-family: var(--font-texto);
+  width: 15vw;
+  height: 130em;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .iconCard {
+  width: 20%;
+}
+
+.cardGroup {
+  display: flex;
+}
+
+
+.card .iconCard {
+  width: 20%;
+}
+
+.cardGroup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0px;
+  border-radius: 9px;
+  margin-bottom: 20px;
+}
+
+.cardGroup a {
+  padding-left: 10px;
+  font-family: var(--font-titulo);
+  text-decoration: none;
+  font-weight: bolder;
+  color: var(--color-dark-gray);
+}
+
+.card .cardGroup img {
+  width: 50px;
+  border-radius: 0;
+}
+.secoes_descricao {
+  border-bottom: solid 1px var(--color-orange);
+  width: 80%;
+  align-items: center;
+}
+.solucoes {
+  width: 80%;
+}
+
+/*Fim da Sessão de cards*/
+/* Seção Empresas */
+
+section#empresas {
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .empresas-title h2 {
+    font-family: var(--font-titulo);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-orange);
+  }
+  
+  .empresas-slider {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .empresa-slide-track {
+    display: flex;
+    justify-content: space-between;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(195px * 18);
+  }
+  
+  .empresa-slide {
+    width: 195px;
+  }
+  
+  .empresa-slide img {
+    width: 100%;
+  }
+  
+  @keyframes scroll {
+    0% {
+      -webkit-animation: translateX(0);
+      transform: translateX(0);
+    }
+  
+    100% {
+      -webkit-animation: translateX(calc(-195px * 9));
+      transform: translateX(calc(-195px * 9));
+    }
+  }
+  
+  
+  /* Fim da Seção Empresas */
+
+  /* Inicio sessão formulario*/
+  section#form {
+    width: 100%;
+    padding: 60px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background-image: radial-gradient( circle 855px at 7.6% 20.5%, rgba(254,95,0,1) 0%, rgba(140,39,30,1) 90% );
+}
+
+.form-title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-white);
+}
+
+.form-title p {
+    font-family: var(--font-titulo);
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.form-title h2 {
+    font-family: var(--font-titulo);
+    font-size: 2.6rem;
+    font-weight: 500;
+}
+
+.contact-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.w100 {
+    width: 500px;
+    padding: 0 5px;
+}
+
+.w50 {
+    width: calc(500px / 2);
+    padding: 0 5px;
+}
+
+.w50-container {
+    display: flex;
+}
+.contact-form input[type=text], .contact-form input[type=email], .contact-form input[type=tel] {
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    padding-left: 10px;
+    font-family: var(--font-titulo);
+    font-weight: 300;
+    font-size: 1.2rem;
+    border: none;
+}
+
+.contact-form input[type=text]:focus, .contact-form input[type=email]:focus, .contact-form input[type=tel]:focus {
+    outline: none;
+}
+
+.contact-form textarea {
+    width: 100%;
+    height: 122px;
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-family: var(--font-titulo);
+    font-weight: 300;
+    font-size: 1.2rem;
+    border: none;
+}
+
+.contact-form textarea:focus {
+    outline: none;
+}
+
+
+.w100 span {
+    font-family: var(--font-texto);
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--color-dark-gray);
+    position: relative;
+    left: 435px;
+    bottom: 35px;
+    user-select: none;
+}
+
+.contact-form input[type=submit] {
+    width: 160px;
+    height: 50px;
+    text-align: center;
+    font-family: var(--font-titulo);
+    font-weight: 600;
+    font-size: 1.1rem;
+    background-color: var(--color-orange);
+    color: var(--color-white);
+    border: 1px solid transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.contact-form input[type=submit]:hover {
+    border: 1px solid var(--color-orange);
+    color: var(--color-orange);
+    background-color: transparent;
+}
+/* Fim formulario*/
+.linha {
+    border-bottom: solid 3px var(--color-orange);
+  }

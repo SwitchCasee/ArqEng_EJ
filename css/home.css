@@ -1,0 +1,482 @@
+#empresas {
+  border-bottom: solid 3px var(--color-orange);
+}
+
+/* Header */
+
+.header-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 5%;
+  gap: 15px;
+  background-color: var(--color-white);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+header {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  width: 150px;
+}
+
+header .logo img {
+  width: 60%;
+}
+
+/* Links de navegação */
+
+header .header-links ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+}
+
+header .topic {
+  text-decoration: none;
+  color: var(--color-dark-gray);
+  font-family: var(--font-titulo);
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+header .topic:hover {
+  color: var(--color-orange);
+}
+
+header .header-links ul li .selected {
+  color: var(--color-orange);
+}
+
+/* Fim de Links de navegação*/
+
+/* Botão da Header */
+
+header .header-button a {
+  text-decoration: none;
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  font-family: var(--font-titulo);
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 600;
+  border: 1px solid transparent;
+  padding: 10px;
+  transition: 0.5s;
+}
+
+header .header-button a:hover {
+  background-color: transparent;
+  border-color: var(--color-orange);
+  color: var(--color-orange);
+}
+
+/* Fim do Botão da Header */
+
+.header-line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-orange);
+}
+
+/* Fim da Header */
+
+/* Seção Home */
+
+section#home {
+  background-color: var(--color-white);
+  width: 100%;
+}
+
+.home-banner-slide {
+  width: 100%;
+  margin-top: -200px;
+}
+
+/* Imagens do slide */
+/*                */
+
+.slide-img {
+  width: 100%;
+  height: 100vh;
+  min-width: 100vw;
+  max-height: 982px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-1 {
+  background-image: url("../assets/banner1.png");
+}
+
+.img-2 {
+  background-image: url("../assets/banner2.png");
+}
+
+.img-3 {
+  background-image: url("../assets/banner3.png");
+}
+
+/* Slide do Banner */
+
+.slider-banner {
+  width: 100%;
+  height: 50em;/* Se der erro deixe em 80vh */
+  overflow: hidden;
+}
+
+.banner-elements {
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  top: 550px;
+}
+
+.banner-elements .banner-logo {
+  width: 100%;
+  height: 50px;
+  background-image: url("../assets/logo-horizontal.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.banner-elements p {
+  color: var(--color-orange);
+  font-family: var(--font-titulo);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.banner-elements a {
+  text-decoration: none;
+  background-color: transparent;
+  color: var(--color-orange);
+  font-family: var(--font-titulo);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  /* border-radius: 8px; */
+  border: 1px solid var(--color-orange);
+  padding: 15px;
+  transition: 0.5s;
+}
+
+.banner-elements a:hover {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+}
+
+.slides-banner {
+  width: 300%;
+  height: 100vh;
+  display: flex;
+}
+
+.slides-banner input {
+  display: none;
+}
+
+.slide-banner {
+  width: 40%;
+  position: relative;
+  transition: 1.5s;
+}
+
+.manual-navigation-banner {
+  position: absolute;
+  width: 100px;
+  left: 50%;
+  top: 0;
+  margin-left: -50px;
+  margin-top: 670px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn-banner {
+  border: 2px solid var(--color-orange);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.manual-btn-banner:not(:last-child) {
+  margin-right: 25px;
+}
+
+.manual-btn-banner:hover {
+  background-color: var(--color-orange);
+}
+
+#radio-banner1:checked ~ .first-banner {
+  margin-left: 0;
+}
+
+#radio-banner2:checked ~ .first-banner {
+  margin-left: -40%;
+}
+
+#radio-banner3:checked ~ .first-banner {
+  margin-left: -80%;
+}
+
+.navigation-auto-banner div {
+  border: 2px solid var(--color-orange);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.navigation-auto-banner {
+  position: absolute;
+  width: 100px;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: 670px;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-auto-banner div:not(:last-child) {
+  margin-right: 25px;
+}
+
+#radio-banner1:checked ~ .navigation-auto-banner .auto-btn-banner1,
+#radio-banner2:checked ~ .navigation-auto-banner .auto-btn-banner2,
+#radio-banner3:checked ~ .navigation-auto-banner .auto-btn-banner3 {
+  background-color: var(--color-orange);
+}
+
+/* Fim da Seção Home */
+
+/* Seção Info */
+
+section#info {
+  width: 100%;
+  padding: 0 5% 50px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-data .contagem,
+.info-data span {
+  font-family: var(--font-titulo);
+  font-size: 5rem;
+  font-weight: 700;
+  color: var(--color-dark-red);
+}
+
+.info-data h2 {
+  font-family: var(--font-titulo);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-dark-red);
+}
+
+/* Seção porque escolher a ARQENG */
+
+section#porque-ARQENG {
+  background-color: var(--color-white);
+  width: 100%;
+  padding: 50px 5%;
+  padding-bottom: 150px;
+}
+
+.porque-ARQENG-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.border {
+  background: var(--color-orange);
+  width: 20px;
+  height: 69px;
+}
+
+.quem-somos-titulo {
+  width: 100%;
+  padding-top: 10px;
+  border-left: 40px solid var(--color-orange);
+  padding-left: 40px;
+  padding-right: 2%;
+}
+
+.quem-somos-titulo,
+img.logoEscolha {
+  width: 250px;
+}
+
+.porque-ARQENG-description {
+  display: flex;
+  margin-left: 50px;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  font-family: var(--font-texto);
+  font-weight: 500;
+}
+
+.porque-ARQENG-description,
+.titulo-porque-ARQENG {
+  font-size: 3rem;
+  font-family: var(--font-titulo);
+  font-weight: 700;
+  color: var(--color-orange);
+}
+
+.paragrafo-porque-ARQENG p {
+  width: 500px;
+  font-size: 1.2rem;
+  font-family: var(--font-texto);
+  text-align: left;
+  color: var(--color-dark-gray);
+  padding: 0 2%;
+}
+
+/* fim da seção porque escolher a ARQENG */
+
+/* Seção Empresas */
+
+section#empresas {
+  width: 100%;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.empresas-title h2 {
+  font-family: var(--font-titulo);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-orange);
+}
+
+.empresas-slider {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+}
+
+.empresa-slide-track {
+  display: flex;
+  justify-content: space-between;
+  animation: scroll 40s linear infinite;
+  -webkit-animation: scroll 40s linear infinite;
+  width: calc(195px * 18);
+}
+
+.empresa-slide {
+  width: 195px;
+}
+
+.empresa-slide img {
+  width: 100%;
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-animation: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-animation: translateX(calc(-195px * 9));
+    transform: translateX(calc(-195px * 9));
+  }
+}
+
+/* Fim da Seção Empresas */
+
+/* Seção Nossa Empresa */
+
+section#nossa-empresa {
+  background-color: var(--color-white);
+  width: 100%;
+  padding: 50px 5%;
+}
+
+.nossa-empresa-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nossa-empresa-description {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.nossa-empresa-description > h1 {
+  font-size: 2.1rem;
+  font-family: var(--font-titulo);
+  font-weight: 700;
+  color: var(--color-orange);
+}
+
+.nossa-empresa-description > p {
+  font-size: 1.3rem;
+  font-family: var(--font-texto);
+  font-weight: 500;
+  color: var(--color-dark-gray);
+}
+
+.nossa-empresa-description > a {
+  width: 208px;
+  padding: 15px 0;
+  text-decoration: none;
+  text-align: center;
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  font-family: var(--font-titulo);
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 600;
+  border: 1px solid transparent;
+  transition: 0.5s;
+}
+
+.nossa-empresa-description > a:hover {
+  background-color: transparent;
+  color: var(--color-orange);
+  border: 1px solid var(--color-orange);
+}

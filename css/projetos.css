@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --color-white: #fbfaf8;
+  --color-dark-red: #8c271e;
+  --color-orange: #fe5f00;
+  --color-dark-gray: #0f0f0f;
+
+  --font-titulo: "MontSerrat", sans-serif;
+  --font-texto: "QuickSand", sans-serif;
+}
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 13em 13em 0 13em;
+  
+  }
+  
+  .projetos h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--color-dark-gray);
+    font-family: var(--font-titulo);
+    margin-bottom: 30px;
+  }
+
+  .projetos span{
+    color: var(--color-orange);
+  }
+  
+  .case{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+   
+
+
+  .cases img {
+   width: 800px; 
+   padding: 40px;
+  }
+  
+
+  .case-text{
+    width: 80%;
+    padding: 0px 40px 40px;
+  }  
+
+  .case-text h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--color-orange);
+    font-family: var(--font-titulo);
+    font-size: 1.5rem;
+    padding: 50px 0px 20px;
+  }
+
+
+  .case-text p {
+    font-size: 1.2rem;
+    font-family: var(--font-texto);
+    color: #555;
+    line-height: 1.8;
+    text-align: justify
+  }
+  
+

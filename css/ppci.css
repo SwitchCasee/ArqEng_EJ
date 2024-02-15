@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --color-white: #FBFAF8; 
+    --color-dark-red: #8C271E;
+    --color-orange: #FE5F00;
+    --color-dark-gray: #0F0F0F;
+
+    --font-titulo:"MontSerrat", sans-serif; 
+    --font-texto: "QuickSand", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
+
+/* Fim das estilizações gerais  */
+
+
+body {
+    background-color: var(--color-white);
+}
+
+/* Header */
+
+.header-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+    gap: 15px;
+    background-color: var(--color-white);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+header {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    width: 150px;
+}
+
+header .logo img{
+    width: 60%;
+}
+
+/* Links de navegação */
+
+header .header-links ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 90px;
+}
+
+header .topic {
+    text-decoration: none;
+    color:var(--color-dark-gray);
+    font-family: var(--font-titulo);
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 500;
+    transition: .5s;
+}
+
+header .topic:hover {
+    color: var(--color-orange);
+}
+
+header .header-links ul li .selected {
+    color: var(--color-orange);
+}
+
+/* Fim de Links de navegação*/
+
+/* Botão da Header */
+
+header .header-button a {
+    text-decoration: none;
+    background-color: var(--color-orange);
+    color: var(--color-white);
+    font-family: var(--font-titulo);
+    font-size: .8rem;
+    font-style: normal;
+    font-weight: 600;
+    border: 1px solid transparent;
+    padding: 10px;
+    transition: .5s;
+}
+
+header .header-button a:hover {
+    background-color: transparent;
+    border-color: var(--color-orange);
+    color: var(--color-orange);
+}
+
+/* Fim do Botão da Header */
+
+.header-line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-orange);  
+}
+
+/* Fim da Header */
+
+/* Seção Banner */
+
+section#banner {
+    background-color: var(--color-white);
+    width: 100%;
+}
+
+.banner-slide {
+    width: 100%;
+    margin-top: -200px;
+    background-color: #000;
+}
+
+
+.img {
+    width: 100%;
+    height: 500px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../assets/ppci.webp');
+    opacity: .5;
+}
+
+
+.banner-elements {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    top: 400px;
+}
+
+.banner-elements h1 {
+    color: var(--color-white);
+    font-family: var(--font-titulo);
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.banner-elements h2 {
+    color: var(--color-white);
+    font-family: var(--font-titulo);
+    font-size: 3rem;
+    font-weight: 700;
+}
+/* Fim da Seção Banner */
+
+/* Seção Solução */
+
+section#solucao {
+    width: 100%;
+    padding: 100px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.solucao-descricao {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 40px;
+}
+
+.solucao-descricao h1 {
+    font-size: 2rem;
+    font-family: var(--font-titulo);
+    font-weight: 700;
+    color: var(--color-orange);
+}
+
+.solucao-paragrafo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.solucao-paragrafo p {
+    font-size: 1.3rem;
+    font-family: var(--font-texto);
+    font-weight: 400;
+}
+
+.solucao-btn {
+    margin-top: 15px;
+}
+
+.solucao-btn a {
+    text-decoration: none;
+    background-color: var(--color-orange);
+    color: var(--color-white);
+    font-family: var(--font-titulo);
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 600;
+    border: 1px solid transparent;
+    padding: 10px;
+    transition: .5s;
+}
+
+.solucao-btn a:hover {
+    background-color: transparent;
+    border-color: var(--color-orange);
+    color: var(--color-orange);
+}
+
+.solucao-img {
+    width: 450px;
+    height: 450px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-image: url('../assets/ppci.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Fim da Seção Solução */
+
+section#solucao-cards {
+    width: 100%;
+    padding: 50px 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(254,95,0);
+    background: linear-gradient(180deg, rgba(254,95,0,1) 0%, rgba(140,39,30,1) 100%);
+}
+
+.solucao-cards-title > h1 {
+    font-size: 2rem;
+    font-family: var(--font-titulo);
+    font-weight: 600;
+    color: var(--color-white);
+}
+
+.cards-solucao {
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    gap: 50px;
+}
+
+.cards-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cards-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section#solucao-cards .card {
+    width: 400px;
+    height: 300px;
+    background-color: var(--color-white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: .5s;
+    cursor: default;
+}
+
+section#solucao-cards .card:hover {
+    scale: 1.1;
+}
+
+section#solucao-cards .card h1 {
+    font-size: 1.5rem;
+    font-family: var(--font-titulo);
+    font-weight: 600;
+    color: var(--color-orange);
+}
+
+section#solucao-cards .card p {
+    font-size: 1.1rem;
+    font-family: var(--font-texto);
+    font-weight: 400;
+}
+
+
+/* RODAPÉ*/
+#empresas{
+    border-bottom: solid 1px var(--color-orange);
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    padding: 10vh 0 5vh 63px;
+    
+    width:90%;
+}
+.footer .element img{
+    width: 1.4vw;
+}
+.element{
+    border: solid .1rem var(--color-dark-gray);
+    background-color: var(--color-white);
+    border-radius: 100px;
+    width: 2vw;
+    height: 2vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+}
+
+.element:hover{
+    background-color: var(--color-dark-red);
+    transition: 2s;
+}
+
+.footer .logo-footer img{
+    height: auto;
+    width: 10vw;
+}
+
+.elements{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 10vw;
+}
+
+footer h3{
+    width: 10vw;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 1rem;
+    font-family: var(--font-titulo);
+}
+
+footer p{
+    font-family: var(--font-texto);
+}
+
+.adress{
+    width: 20vw;
+    padding-right: 85px;
+    padding: 0 5vw;
+}
+
+.adress h3{
+    width: 20vw;
+}
+
+.social-medias{
+    padding: 0 14vw 0 5vw;
+}
+.header-fo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+    gap: 15px;
+    background-color: var(--color-white);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+/* Fim da sessão rodapé*/

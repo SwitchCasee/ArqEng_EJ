@@ -1,0 +1,199 @@
+.photos-squad {
+    width: 500px;
+    height: 533px; 
+    transition: 1.5s;
+}
+
+h1{
+    font-family: var(--font-titulo);
+    padding-bottom: 1.5em;
+    font-size: 2.4em;
+}
+h1 span{
+    color: var(--color-orange);
+}
+
+.sobrenos-texto p{
+    font-family: var(--font-texto);
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.sobrenos-texto{
+    width: 60%;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 13em 13em 0 13em;
+}
+
+/* Cards */
+.cards {
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14em;
+    height: 45em;
+  }
+  
+  .card {
+    font-family: Lato, sans-serif;
+    position: relative;
+    width: 290px;
+    height: 400px;
+    background: #232323;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:var(--color-orange);
+    clip-path: circle(150px at 80% 20%);
+    transition: .5s ease-in-out;
+  }
+  
+  .card:hover:before {
+    clip-path: circle(300px at 80% -20%);
+  }
+  
+  .title {
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--color-white);
+    margin-top: 12px;
+  }
+  
+  .bg-title {
+    font-size: 4.3rem;
+    font-weight: 900;
+    font-style: italic;
+    color: #ffffff30;
+    position: absolute;
+    max-width: 120%;
+    top: -150%;
+    transition: .6s;
+  }
+  
+  .card:hover .bg-title {
+    transform: translateY(55%);
+    padding-top: 10px;
+  }
+  
+  .photo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 100%;
+    height: 220px;
+    transition: .5s;
+  }
+  
+  .card:hover .photo {
+    top: 0%;
+    transform: translateY(0%);
+  }
+  
+  .photo img {
+    position: absolute;
+    width: 220px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-25deg);
+    transition: .5s;
+  }
+  
+  .card:hover .photo img {
+    width: 260px;
+    top: 56%;
+  }
+  
+  .content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 5;
+  }
+  
+  .card:hover .content {
+    height: 190px;
+  }
+  
+  .feature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: .5s;
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  .card:hover .feature {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: .5s;
+  }
+  
+  .feature div {
+    color:var(--color-white);
+    font-family: var(--font-texto);
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+  }
+  /*Fim dos Cards */
+
+  /*Contato*/
+  .contato{
+    height: 15em;
+    overflow: hidden;
+    background: radial-gradient( circle 855px at 7.6% 20.5%, rgba(254,95,0,1) 0%, rgba(140,39,30,1) 90% );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+    border-bottom: solid 3px var(--color-orange);
+    
+  }
+
+.contato h2{
+    font-family: var(--font-titulo);
+    font-size: 2.4em;
+}
+
+.btn-link{
+  text-decoration: none;
+  background-color: transparent;
+  color: var(--color-orange);
+  font-family: var(--font-titulo);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  border: 1px solid var(--color-orange);
+  padding: 15px;
+  transition: 0.5s;
+}
+
+.btn-link:hover{
+  background-color: var(--color-orange);
+  color: var(--color-white);
+}
